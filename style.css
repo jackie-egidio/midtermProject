@@ -70,13 +70,34 @@ html, body {
     opacity: 0.3;
 }
 
+.container {
+    display: flex;
+    width: 100vw;
+    height: 15vw;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.item {
+    display: inline-flex;
+    order: 3;
+    background-color: #FCD7AD;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    width: 20%;
+    color: #A57548;
+}
+
 #footer {
     list-style-type: none;
     margin: 0;
     padding: 0;
     top: 0;
     font-family: sans-serif;
-    background-color: #4A7856;
+    background-color: #1E3F20;
     padding: 8px;
 }
 
