@@ -48,6 +48,14 @@ html, body {
     color: #94ECBE;
 }
 
+#logo {
+    height: 110px;
+    align-self: left;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
 .bannerText {
     position: absolute;
     top: 40%;
