@@ -48,6 +48,19 @@ html, body {
     color: #94ECBE;
 }
 
+.bannerText {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #1E3F20;
+}
+
+.banner {
+    width: 100%;
+    opacity: 0.3;
+}
+
 #footer {
     list-style-type: none;
     margin: 0;
