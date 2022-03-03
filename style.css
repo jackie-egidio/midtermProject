@@ -4,11 +4,12 @@ html, body {
     background-image: linear-gradient(#E9F6E3, #F6F0E3);
 }
 
+/* creates fixed header */
 .header {
     background-color: #1E3F20;
     height: 110px;
     font-family: serif;
-    color: #D5F5E3;
+    color: #E9F6E3;
     margin: 0;
     position: fixed;
     width: 100%;
@@ -21,6 +22,7 @@ html, body {
     padding: 15px;
 }
 
+/* creates navigation bar */
 #nav {
     list-style-type: none;
     margin: 0;
@@ -29,25 +31,85 @@ html, body {
     text-align: center;
     font-family: sans-serif;
     background-color: #4A7856;
-    padding: 8px;
+    padding: 17px;
+}
+
+#nav ul {
+    font-family: Arial, Verdana;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding: 13px;
 }
 
 #nav li {
-    display: inline;
-}
-
-#nav li a {
-    display: inline;
-    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
     text-decoration: none;
     color: #D5F5E3;
     font-size: 20px;
+    white-space: nowrap;
+    cursor: pointer;
 }
 
-#nav li a:hover {
-    color: #94ECBE;
+#nav li:hover {
+    background-color: #94ECBE;
+    color: #4A7856;
 }
 
+#nav li:hover ul {
+    display: block;
+    position: absolute;
+}
+
+#nav li:hover li {
+    float: none;
+    font-size: 11px;
+}
+
+#nav li a {
+    padding: 15px;
+    text-decoration: none;
+    color: #D5F5E3;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+#nav ul li {
+    display: block;
+    position: relative;
+    float: left;
+}
+
+#nav li ul {
+    display: none;
+}
+
+#nav ul li a {
+    display: block;
+    padding: 20px 15px 20px 15px;
+    text-decoration: none;
+    color: #D5F5E3;
+    font-size: 20px;
+    margin-left: 1px;
+    white-space: nowrap;
+    text-align: left;
+}
+
+#nav ul li a:hover {
+    background: #1E3F20;
+}
+
+.show {
+    display: block;
+}
+
+#nav li:hover a { 
+    background: #4A7856; 
+}
+
+/* positions logo in top left corner */
 #logo {
     height: 110px;
     align-self: left;
@@ -56,6 +118,7 @@ html, body {
     z-index: 99;
 }
 
+/* styles image banner */
 .bannerText {
     position: absolute;
     top: 40%;
@@ -67,10 +130,12 @@ html, body {
 }
 
 .banner {
+    display: block;
     width: 100%;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
+/* styles services section */
 .container {
     display: flex;
     width: 100vw;
@@ -98,7 +163,7 @@ html, body {
     z-index: 2; 
     margin-top: auto;
     margin-bottom: 0; */
-    background-image: url("battingCage.jpg");
+    background-image: url("battingCage.jpeg");
     background-size: cover;
 }
 
@@ -117,12 +182,14 @@ html, body {
     background-size: cover;
 }
 
+/* styles about section */
 .about {
     font-size: 30px;
     font-family: sans-serif;
-    width: 60%;
+    width: 50%;
     margin: auto;
     display: block;
+    padding-bottom: 100px;
 }
 
 .about h1 {
@@ -130,6 +197,11 @@ html, body {
     color: #1E3F20;
 }
 
+.about p {
+    font-size: 24px;
+}
+
+/* styles footer */
 #footer {
     list-style-type: none;
     margin: 0;
