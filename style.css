@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     padding-top: 60px;
-    background-color: #D5F5E3;
+    background-image: linear-gradient(#E9F6E3, #F6F0E3);
 }
 
 .header {
@@ -63,6 +63,7 @@ html, body {
     transform: translate(-50%, -50%);
     color: #1E3F20;
     font-size: 60px;
+    font-family: sans-serif;
 }
 
 .banner {
@@ -73,9 +74,9 @@ html, body {
 .container {
     display: flex;
     width: 100vw;
-    height: 15vw;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    height: 20vw;
+    padding-top: 200px;
+    padding-bottom: 200px;
     flex-flow: row wrap;
     justify-content: space-around;
 }
@@ -83,12 +84,50 @@ html, body {
 .item {
     display: inline-flex;
     order: 3;
-    background-color: #FCD7AD;
+    background-color: #A57548;
     padding: 20px;
-    text-align: center;
     border-radius: 5px;
     width: 20%;
-    color: #A57548;
+    color: #332518;
+}
+
+#batting {
+    /* padding: 34px 40px;
+    color: #fff;
+    position: relative;
+    z-index: 2; 
+    margin-top: auto;
+    margin-bottom: 0; */
+    background-image: url("battingCage.jpeg");
+    background-size: cover;
+}
+
+#trampoline {
+    background-image: url("trampoline\ park.2.jpeg");
+    background-size: cover;
+}
+
+#miniGolf {
+    background-image: url("mini\ golf.2.jpeg");
+    background-size: cover;
+}
+
+#karting {
+    background-image: url("gocart.1.jpeg");
+    background-size: cover;
+}
+
+.about {
+    font-size: 30px;
+    font-family: sans-serif;
+    width: 60%;
+    margin: auto;
+    display: block;
+}
+
+.about h1 {
+    text-align: center;
+    color: #1E3F20;
 }
 
 #footer {
