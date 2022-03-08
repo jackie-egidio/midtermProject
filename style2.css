@@ -48,7 +48,7 @@ and (max-height : 736px)
     /* display: inline; */
     text-decoration: none;
     color: black;
-    font-size: 1.5;
+    font-size: 15px;
     font-weight: lighter;
     letter-spacing: 0.1em;
 }
