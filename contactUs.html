@@ -3,53 +3,79 @@
   <head>
     <meta name=‘viewport’ content=“width: device-width, initial-scale=1”>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script language="javascript">
+        attractions = ["Trampoline park.1.jpeg","mini golf.1.jpeg","gocart.1.jpeg","course1.jpeg","battingCage.jpeg"];
+        var index = 0;
+
+        function slides() 
+        {
+            $("#contactContainer img").fadeOut(3000, nextSlide);
+        }
+        $(document).ready(function() {
+            slides();
+        })
+        function nextSlide()
+        {
+            index++;
+            index= index== attractions.length? 0: index;
+            $("#contactContainer img").attr("src", attractions[index]);
+            $("#contactContainer img").fadeIn(3000, slides);
+        }
+    </script>
+
+    <style>
+        p {
+            font-size: 1.5em;
+        }
+        h2 {
+            padding-top: 100px;
+            font-size: 3em;
+        }
+        .contactContainer {
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        .contactContainer img {
+            width: 400px;
+            border-radius: 30px;
+        }
+        /* .item {
+            background-image: url("contact.jpg");
+            background-size: cover;
+            height: 400px; 
+            background-repeat: no-repeat;
+            background-position: center;
+        } */
+        
+    </style>
   </head>
-  <style>
-    .container{
-      text-align: center;
-      font-family: sans-serif;
-    }
-    p{
-     font-size: 1.5em;
-    }
-    h2{
-      padding-top: 100px;
-      font-size: 3em;
-    }
-    .item{
-      background-image: url("contact.jpg");
-      background-size: cover;
-      height: 800px; 
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-    
-</style>
   <body>
     <div class="header">
-            <ul id="nav" style ="margin-top: 70px">
+            <ul id="nav" style="margin-top: 70px">
                 <li><a href="#">About Us</a>
                     <ul>
-                        <li class ="hoverList"><a href="#">Our Mission</a></li>
-                        <li class ="hoverList"><a href="#">Blog</a></li>
-                        <li class ="hoverList"><a href="contactUs.html">Contact Us</a></li>
-                        <li class ="hoverList"><a href="#">FAQs</a></li>
+                        <li class="hoverList"><a href="#">Our Mission</a></li>
+                        <li class="hoverList"><a href="#">Blog</a></li>
+                        <li class="hoverList"><a href="contactUs.html">Contact Us</a></li>
+                        <li class="hoverList"><a href="#">FAQs</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Where to Start</a>
                     <ul>
-                        <li class ="hoverList"><a href="#">Rules</a></li>
-                        <li class ="hoverList"><a href="#">Directions</a></li>
-                        <li class ="hoverList"><a href="#">Waiver</a></li>
+                        <li class="hoverList"><a href="#">Rules</a></li>
+                        <li class="hoverList"><a href="#">Directions</a></li>
+                        <li class="hoverList"><a href="#">Waiver</a></li>
                     </ul>
                 </li>
                 <li><a href="index.html"><img id="logo" src="Logo_Midterm.jpg"></a></li>
                 <li><a href="#">Services</a>
                     <ul>
-                        <li class ="hoverList"><a href="#">Batting Cage</a></li>
-                        <li class ="hoverList"><a href="trampoline.html">Trampolines</a></li>
-                        <li class ="hoverList"><a href="miniGolf.html">Mini Golf</a></li>
-                        <li class ="hoverList"><a href="gokart.html">Go Karting</a></li>
+                        <li class="hoverList"><a href="#">Batting Cage</a></li>
+                        <li class="hoverList"><a href="trampoline.html">Trampolines</a></li>
+                        <li class="hoverList"><a href="miniGolf.html">Mini Golf</a></li>
+                        <li class="hoverList"><a href="gokart.html">Go Karting</a></li>
                     </ul>
                 </li>
                 <li class="book"><a href="#" style="color: #fff;">BOOK NOW</a></li>
@@ -58,17 +84,15 @@
     <div class="about">
         <h2>Our Contact Information</h2>
         <p>
-          <br> Email: <a href="mailto: adventurepark@gmail.com">
-            adventurepark@gmail.com</a> </<br>>
-          <br> Phone Number: (123)-456-7890 </br>
-          <br> Adress: 17 Cherry Tree Lane, Medford, Ma 02155 </br>
-          <div class = "item" id = "contact"></div>
+          <br /> Email: <a href="mailto: adventurepark@gmail.com">
+            adventurepark@gmail.com</a> <br />
+          <br /> Phone Number: (123)-456-7890 <br />
+          <br /> Adress: 17 Cherry Tree Lane, Medford, Ma 02155 <br />
         </p>
-        
-        
-    </div>
-    <div class = "container">
-      
+        <br />
+        <div id="contactContainer">
+            <img src="Trampoline park.1.jpeg">
+        </div>
     </div>
     <div id="footer">
             <ul>
