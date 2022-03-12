@@ -259,3 +259,11 @@ ul {
     color: #D5F5E3;
     font-size: 16px;
 }
+.description{
+  display: inline-block;
+  width: 20vw;
+  height: 30vw;
+  padding-bottom: 280px;
+  padding-left: 1000px;
+  flex-flow: row wrap;
+}
