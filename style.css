@@ -193,7 +193,31 @@ ul {
     color: #fff;
 }
 
-#batting, #trampoline, #miniGolf, #karting {
+#batting {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+#trampoline {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+    
+#miniGolf {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+#karting {
     position: relative;
     display: flex;
     align-items: center;
