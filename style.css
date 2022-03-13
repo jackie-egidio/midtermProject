@@ -195,6 +195,7 @@ ul {
     padding: 20px;
     width: 20%;
     color: #fff;
+    /* text-decoration: none; */
 }
 
 #batting, #trampoline, #miniGolf, #karting {
@@ -203,6 +204,7 @@ ul {
     align-items: center;
     justify-content: center;
     font-family: sans-serif;
+    /* text-decoration: none; */
 }
 
 #batting::before {
@@ -215,12 +217,19 @@ ul {
     left: 0px;
     bottom: 0px;
     opacity: 0.5;
+    /* text-decoration: none; */
 }
 
 #batting h1, #trampoline h1, #miniGolf h1, #karting h1 {
     position: relative;
     text-align: center;
     padding: 50px;
+    /* text-decoration: none; */
+}
+
+#batting h1 a, #trampoline h1 a, #miniGolf h1 a, #karting h1 a {
+    text-decoration: none;
+    color: #fff;
 }
 
 #trampoline::before {
