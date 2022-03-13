@@ -173,7 +173,10 @@ ul {
 
 /* styles services section */
 .container {
+    position: relative;
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100vw;
     height: 20vw;
     padding-top: 200px;
@@ -184,38 +187,72 @@ ul {
 
 .item {
     display: inline-flex;
-    order: 3;
-    background-color: #A57548;
+    background-color: #000;
     padding: 20px;
-    border-radius: 5px;
     width: 20%;
-    color: #332518;
+    color: #fff;
 }
 
-#batting {
-    /* padding: 34px 40px;
-    color: #fff;
+#batting, #trampoline, #miniGolf, #karting {
     position: relative;
-    z-index: 2; 
-    margin-top: auto;
-    margin-bottom: 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+#batting::before {
     background-image: url("battingCage.jpeg");
     background-size: cover;
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    opacity: 0.5;
 }
 
-#trampoline {
+#batting h1, #trampoline h1, #miniGolf h1, #karting h1 {
+    position: relative;
+    text-align: center;
+    padding: 50px;
+}
+
+#trampoline::before {
     background-image: url("trampoline\ park.2.jpeg");
     background-size: cover;
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    opacity: 0.75;
 }
 
-#miniGolf {
+#miniGolf::before {
     background-image: url("mini\ golf.2.jpeg");
     background-size: cover;
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    opacity: 0.75;
 }
 
-#karting {
+#karting::before {
     background-image: url("gocart.1.jpeg");
     background-size: cover;
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    opacity: 0.75;
 }
 
 /* styles about section */
@@ -258,12 +295,4 @@ ul {
     text-decoration: none;
     color: #D5F5E3;
     font-size: 16px;
-}
-.description{
-  display: inline-block;
-  width: 20vw;
-  height: 30vw;
-  padding-bottom: 280px;
-  padding-left: 1000px;
-  flex-flow: row wrap;
 }
