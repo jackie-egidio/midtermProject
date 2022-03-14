@@ -8,8 +8,8 @@ function check_valid_inputs () {
 	let numppl = document.getElementById('numppl').value;
 	const checkboxarray = [];
 	checkboxarray[0] = document.getElementById('gokarting').checked;
-	checkboxarray[1] = document.getElementById('batting').checked;
-	checkboxarray[2] = document.getElementById('trampoline').checked;
+	checkboxarray[1] = document.getElementById('batting12').checked;
+	checkboxarray[2] = document.getElementById('trampoline12').checked;
 	checkboxarray[3] = document.getElementById('minigolf').checked;
 	let value = 0;
 	let price = 0;
