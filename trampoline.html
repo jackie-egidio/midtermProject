@@ -4,27 +4,27 @@
         <meta name=‘viewport’ content=“width: device-width, initial-scale=1”>
         <link rel="stylesheet" href="style.css">
         <style>
-            .trampolineContainer {
+
+            .trampolineItem {
                 display: block;
-                width: 100vw;
-                height: 30vw;
-                padding-top: 30px;
-                padding-bottom: 280px;
-                flex-flow: row wrap;
-                justify-content: space-around;
+                width: 45%; 
+                float: left; 
+                height: 500px; 
             }
 
-            .trampolineContainer img {
-                display: block;
-                text-align: left;
-                margin-right: auto;
-                margin-left: 100px;
-                order: 1;
-                width: auto;
-                border-radius: 50px;
-                width: 600px;
-                padding: 20px;
+            .trampolineItem p {
+                font-size: 26px; 
+                color: #1E3F20; 
+                font-family: sans-serif;
             }
+
+            .trampolineItem img {
+                display: block;
+                margin: auto;
+                width: 70%; 
+                border-radius: 15px;
+            }
+            
         </style>
     </head>
     <body>
@@ -62,26 +62,38 @@
             <h1 class="bannerText">TRAMPOLINE PARK</h1>
         </div>
         <br /><br />
-        <div class="trampolineContainer">
-            <div>
+        <div>
+            <div class="trampolineItem">
                 <img src="trampoline4.jpeg">
             </div>
-            <div>
+            <div class="trampolineItem">
+                <p>
+                    Here at Adventure Park one of our attractions is the super fun trampoline park. 
+                    We’re people like you who want to exercise, but also like to have fun. Lots of fun. 
+                    So instead of stairclimbers and weight machines, we decided to create a place where you 
+                    can soar in open jump arenas, dive into pools of soft foam cubes, play trampoline dodgeball,
+                    do flips and somersaults. We also wanted a new alternative for birthday parties and family 
+                    gatherings, where quality food and private party rooms were guaranteed, and our kids could safely 
+                    play while we socialized with other parents. 
+                </p>
+            </div>
+            <div class="trampolineItem">
                 <img src="trampoline2.jpeg">
+            </div>
+            <div class="trampolineItem">
+                <p>
+                    We have served many happy customers, all who were happy with our trained staff 
+                    supervisors, clean environment, safety consciousness, and inclusivity. Our
+                    park is always full of smiling children, equally satisfied parents, and 
+                    a whole lot of fun!
+                    If this sounds like an activity you and your family would be interested in, 
+                    click the BOOK NOW button in the top right hand corner of your screen. 
+                    We hope to see you there!
+                </p>
             </div>
         </div>
         <br /><br />
-        <div class="text">
-            <p style="width: 50%; margin: auto; font-size: 30px; color: #1E3F20; font-family: sans-serif;">
-                Here at Adventure Park one of our attractions is the super fun trampoline park. 
-                We’re people like you who want to exercise, but also like to have fun. Lots of fun. 
-                So instead of stairclimbers and weight machines, we decided to create a place where you 
-                can soar in open jump arenas, dive into pools of soft foam cubes, play trampoline dodgeball,
-                do flips and somersaults. We also wanted a new alternative for birthday parties and family 
-                gatherings, where quality food and private party rooms were guaranteed, and our kids could safely 
-                play while we socialized with other parents. 
-            </p>
-        </div>
+        <div style="padding: 500px"></div>
         <div id="footer">
             <ul>
                 <li><a href="index.html">Home</a></li>
