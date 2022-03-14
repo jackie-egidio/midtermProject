@@ -182,7 +182,7 @@ html, body {
 
 .logo {
     height: 140px;
-    position: fixed;
+    position: absolute;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 100px;
     background-color: white;
