@@ -2,6 +2,7 @@ html, body {
     margin: 0;
     padding-top: 60px;
     background-image: linear-gradient(#E9F6E3, #F6F0E3);
+    box-sizing: border-box;
 }
 
 #nav {
