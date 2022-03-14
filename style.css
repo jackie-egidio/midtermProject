@@ -182,13 +182,13 @@ html, body {
 
 .logo {
     height: 140px;
-    position: absolute;
+    position: fixed;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 100px;
     background-color: white;
     width: auto;
     z-index: 99;
-    margin-left: 45vw;
+    margin-top: -60px;
     display: block;
 }
 
