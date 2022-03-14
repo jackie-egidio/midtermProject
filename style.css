@@ -1,5 +1,7 @@
-* {
-    box-sizing: border-box;
+html, body {
+    margin: 0;
+    padding-top: 60px;
+    background-image: linear-gradient(#E9F6E3, #F6F0E3);
 }
 
 #nav {
@@ -186,7 +188,7 @@
     background-color: white;
     width: auto;
     z-index: 99;
-    margin-left: 650px;
+    margin-left: 50vw;
     display: block;
 }
 
