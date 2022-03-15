@@ -3,6 +3,8 @@
 }
 html, body {
     background-image: linear-gradient(#E9F6E3, #F6F0E3);
+    margin: 0;
+    padding: 0;
 }
 
 #nav {
@@ -28,6 +30,7 @@ html, body {
 .about p {
     font-size: 24px;
 }
+
 /* style for desciption above services */
 .serviceDescription {
     text-align: center;
@@ -155,11 +158,11 @@ html, body {
     font-size: 16px;
 }
 
+/* styles navigation bar */
 #nav li {
     display: inline-block;
     text-decoration: none;
     color: #ebf4e2;
-        /* border: 1px solid red; */
     font-size: 20px;
     white-space: nowrap;
     cursor: pointer;
@@ -167,8 +170,6 @@ html, body {
 }
 
 #nav li a {
-    /* padding: 15px; */
-        /* border: 1px solid red; */
     text-decoration: none;
     color: #1E3F20;
     font-size: 20px;
@@ -177,7 +178,6 @@ html, body {
 }
 
 #nav li:hover a {
-    /* border: 1px solid red; */
     color: #4A7856;
 }
 
@@ -202,30 +202,6 @@ html, body {
     text-decoration: underline;
     z-index: 99;
     text-underline-position: under;
-}
-
-/* styles image banner */
-.bannerText {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    letter-spacing: 0.2em;
-    padding: 40px;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 2.5em;
-    font-family: sans-serif;
-}
-
-.banner {
-    width: 100vw;
-    height: 15em;
-    /* margin-top: -20px; */
-    object-fit: cover;
-    object-position: 80% 20%;
-    opacity: 0.9;
-    z-index: -99;
-    filter: brightness(60%) blur(0.5px);
 }
 
 #nav li:hover ul {
@@ -274,10 +250,6 @@ html, body {
 #nav ul li a:hover {
     color: #4A7856;
 }
-body {
-    margin: 0;
-    padding: 0;
-}
 
 .navbar {
     display: flex;
@@ -302,7 +274,7 @@ body {
   float: left;
 }
 
-.navbar-links:hover .dropdown-content {display: block;}
+.navbar-links:hover .dropdown-content { display: block; }
 
 .brand-title {
     font-size: 1.1rem;
@@ -360,6 +332,29 @@ body {
     width: 100%;
     background-color: black;
     border-radius: 10px;
+}
+
+/* styles image banner */
+.bannerText {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    letter-spacing: 0.2em;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.5em;
+    font-family: sans-serif;
+}
+
+.banner {
+    width: 100vw;
+    height: 15em;
+    object-fit: cover;
+    object-position: 80% 20%;
+    opacity: 0.9;
+    z-index: -99;
+    filter: brightness(60%) blur(0.5px);
 }
 
 /* The role of media query is that, it says if certain condition meet run the code of inside it, and if not then don't */
