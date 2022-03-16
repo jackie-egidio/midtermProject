@@ -3,12 +3,19 @@
 <head>
 <meta charset="UTF-8">
 	<meta name="viewport" content=“width: device-width, initial-scale=1”>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="main.css">
     <style>
 	.booking {
 		text-align: center;
 		padding-top: 60px;
 	}
+    .book h1 {
+        text-align: center;
+        padding-top: 30px;
+        font-size: 2.5em;
+        font-family: sans-serif;
+        font-weight: lighter;
+    }
 	#Cocomo {
 		display:block;
 	}
@@ -28,16 +35,24 @@
 	#basicinfo {
 		text-align: center;
 		padding-top: 0px;
-
 	}
-	
+    input[type = checkbox] {
+        zoom: 1.5;
+    }
+    .activity {
+        display: inline-block;
+        vertical-align: top;
+        positon: relative:
+    }
+
+
 	</style>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="./midtermscript.js"></script>
 <title>booking</title>
 </head>
 
-<body>
+<body style="font-family: sans-serif">
 	<div style="background-color:rgb(73,120,86); height: 70px"></div>
     <nav class="navbar">
         <div class="brand-title">
@@ -76,57 +91,62 @@
         </div>
     </nav>
 <div class = "phone">
-		<text>Group Sales Phone:</text>
-		<a href="tel:347-703-7561">347-703-7561</a>
-		<br>
-		<br>
-		<text>Contact Email:</text>
-		<a href="mailto:jahansherkhan99@gmail.com">jahansherkhan99@gmail.com</a>
+        <h1 style="font-weight: lighter; font-size: 2.5em">Book Now</h1>
+        <p style="font-weight: lighter; font-size: 20px; text-align: left; margin-left: 500px">
+          <br /> Group Sales Phone: 347-703-7561 <br />
+          <br /> Booking Email: <a href="mailto: jahansherkhan99@gmail.com">
+            jahansherkhan99@gmail.com.com</a> <br />
+        </p>
 	</div>
 	<div class = "booking">
-	  <form id = "form1" method = "get" onSubmit="check_valid_inputs()" style="display: block">
-			<p id = "makeabooking" style="display: flex; margin-left: 660px;" ><strong>Make a booking</strong></p>
-			<ul id = "basicinfo" name = "basicinfo" style="display: inline-block">
-			  <li>
-				<label for="firstname">First Name: *</label>
-				<input type="text" id="firstname" name="firstname" required> 
-			  </li>
-			  <li>
-				<label for="lastname">Last Name: *</label>
+	  <form id = "form1" method = "get" onSubmit="check_valid_inputs()" style="display: block; font-weight: lighter">
+			<!-- <p id = "makeabooking" style="display: flex; margin-left: 660px;" ><strong>Make a booking</strong></p> -->
+			<ul id = "basicinfo" name = "basicinfo" style="display: inline-block; margin-top: -40px">
+			  <ul>
+				<label for="firstname" style="margin-left: -270px">First Name: </label>
+				<input type="text" id="firstname" name="firstname" required>
+			  </ul>
+              <br>
+			  <ul>
+				<label for="lastname" style="margin-left: -270px">Last Name: </label>
 				<input type="text" id="lastname" name="lastname" required>
-			  </li>
-			  <li>
-				<label for="mail">&nbsp; &nbsp; &nbsp; E-mail: *</label>
+			  </ul>
+              <br>
+			  <ul>
+				<label for="mail" style="margin-left: -270px">&nbsp; &nbsp; &nbsp; E-mail: </label>
 				<input type="email" id="mail" name="user_email" required>
-			  </li>
-			  <li>
-				<label for="number">&nbsp; &nbsp; &nbsp; Phone: *</label>
+			  </ul>
+              <br>
+			  <ul>
+				<label for="number" style="margin-left: -270px" >&nbsp; &nbsp; &nbsp; Phone: </label>
 				<input type="phone" id="number" name="number" required>
-			  </li>
+			  </ul>
+              <br>
 	    	</ul>
 			<br>
-		  	<div id = "errormessage" style="color: crimson"></div>
-			<text>What would you like to book? (You can pick multiple) *</text><br>
+			<text style="margin-left: -40px">What would you like to book? (You can pick multiple)</text><br>
 			<br>
-		    
-			<input class = "activity" type="checkbox" id="gokarting" name="activity" value="gokarting">
-			<label for="gokarting"> Go-Karting $20</label><br>
-			<input class = "activity"type="checkbox" id="batting12" name="activity" value="batting">
-			<label for="batting"> Batting Cage $15 </label><br>
-			<input class = "activity" type="checkbox" id="trampoline12" name="activity" value="trampoline">
-			<label for="trampoline"> Trampoline Park $10</label><br>
-			<input class = "activity" type="checkbox" id="minigolf" name="activity" value="minigolf">
-			<label for="minigolf"> Mini-Golf $25</label><br>
+
+            <div style="margin-left: -150px">
+			<input class = "activity" style="height: 40px, width: 40px" type="checkbox" id="gokarting" name="activity" value="gokarting">
+			<label for="gokarting"> Go-Karting</label><br>
+			<input class = "activity"type="checkbox" class = "boxy" id="batting12" name="activity" value="batting">
+			<label for="batting"> Batting Cage</label><br>
+			<input class = "activity" type="checkbox" class = "boxy" id="trampoline12" name="activity" value="trampoline">
+			<label for="trampoline"> Trampoline Park</label><br>
+			<input class = "activity" type="checkbox" class = "boxy" id="minigolf" name="activity" value="minigolf">
+			<label for="minigolf"> Mini-Golf</label><br>
 			<div id = "failure" style="color: crimson"></div>
+            </div>
 		 	<br>
-			<text>How many people would you like to book for? *</text><br>
+			<text>How many people would you like to book for?</text><br>
 			<select name="People" id="numppl">
 			  <option value="1">1</option>
 			  <option value="2">2</option>
 			  <option value="3">3</option>
 			  <option value="4">4</option>
 			  <option value="5">5</option>
-			  <option value="6">6</option>	
+			  <option value="6">6</option>
 			</select>
 			<br>
 			<br>
@@ -137,14 +157,15 @@
 				   min="2022-04-01T09:00" max="2022-12-31T19:00" required>
 			<span class="validity"></span>
 			</div>
-		  	<div id = "timefailure"></div>
+            <br>
+            <br>
 			<button id="button" type="button" Submit onClick="check_valid_inputs()">
             Submit
         	</button>
 
 	  </form>
 		<div id = "Confirmation"></div>
-		
+
 	</div>
 	<div style="padding: 65px;"></div>
 	<div id="footer">
