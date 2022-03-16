@@ -7,6 +7,10 @@ html, body {
     padding: 0;
 }
 
+p {
+    font-weight: lighter;
+}
+
 #nav {
     list-style-type: none;
     font-family: sans-serif;
