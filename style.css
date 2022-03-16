@@ -353,7 +353,7 @@ p {
 
 .banner {
     width: 100vw;
-    height: 15em;
+    height: 20em;
     object-fit: cover;
     object-position: 80% 20%;
     opacity: 0.9;
